@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Boo from "./Boo";
-import data from "./data";
+import useData from "./data";
 import Pic from "@/Pic";
 import Game from "@/Board";
 import { useEffect, useState, useRef, useLayoutEffect } from "react";
@@ -127,6 +127,7 @@ export default function Home() {
 function Form() {
 	const [newID, setNewID] = useState('');
 	const [newDescription, setNewDescription] = useState('');
+	const data = useData();
 	const [picData, setPicData] = useState(
 		data.map(([id, title]) => ({ key: id, picId: id, title }))
 	);

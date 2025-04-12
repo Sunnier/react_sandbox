@@ -1,4 +1,4 @@
-export default [
+const useData = () => [
   [82, "Lorem ipsum dolor sit amet"],
   [
     309,
@@ -38,3 +38,5 @@ export default [
     "Aenean egestas vel metus consectetur tempor. Donec porta ligula augue, et sodales dolor imperdiet nec. Aliquam in est ex. Praesent dui purus, convallis at laoreet ac, interdum eget orci. Donec ut massa ut augue rutrum finibus. Integer id hendrerit nulla. Phasellus nec nibh at elit dignissim maximus. Suspendisse nec tristique turpis, in cursus purus.",
   ],
 ];
+
+export default useData;
