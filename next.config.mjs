@@ -2,8 +2,7 @@
 const nextConfig = {
 	reactStrictMode: true,
 	output: 'export',
-	// pageExtensions: ["data.js"],
-	assetPrefix:'/my-app/out'
+	assetPrefix:'/react_sandbox'
 };
 
 export default nextConfig;
