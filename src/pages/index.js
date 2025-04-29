@@ -37,15 +37,13 @@ export default function Home() {
 	const handleThemeSwitch = (event) => {
 		setTheme(event.target.checked ? "dark" : "light");
 		localStorage.setItem("theme", event.target.checked ? "dark" : "light");
-		console.log(event.target.checked);
-		console.log(theme);
 	};
 	return (
 		<>
 			<Head>
-				<title>Test 2</title>
+				<title>Gallery</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/favicon.svg" />
 			</Head>
 			<div
 				className={"theme " + (isLoaded.current ? "" : "preload")}
@@ -53,7 +51,7 @@ export default function Home() {
 			>
 				<main>
 					<h2>
-						Gallery Flex 1
+						Gallery (CSS Flexbox, React.js)
 						<label className="theme-switch">
 							<input
 								type="checkbox"
